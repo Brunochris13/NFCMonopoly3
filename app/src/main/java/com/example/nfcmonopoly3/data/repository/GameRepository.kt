@@ -9,7 +9,6 @@ private const val LOG_TAG = "GameRepository"
 class GameRepository(private val gameDao: GameDao) {
 
     suspend fun createGame(): Long {
-
         // Insert Game Entity
         // Get gameId that was just created
         return gameDao.insertGameEntity(GameEntity())
