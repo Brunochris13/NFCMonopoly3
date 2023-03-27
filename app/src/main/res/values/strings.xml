@@ -1,12 +1,93 @@
 <resources>
-    <string name="app_name">NFCMonopoly3</string>
-    <string name="action_settings">Settings</string>
-    <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
-    <string name="next">Next</string>
-    <string name="previous">Previous</string>
+    <string name="app_name">NFC Monopoly 3</string>
+    <string name="default_string">Default</string>
 
-    <string name="hello_first_fragment">Hello first fragment</string>
-    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <!--Navigation-->
+    <string name="home_fragment_title">Players Setup</string>
+    <string name="game_fragment_title">Game</string>
+    <string name="trade_fragment_title">Trade</string>
+
+    <!--Home Fragment-->
+    <string name="start_btn">Start</string>
+    <string name="mega_switch">Mega</string>
+    <string name="edit_player_btn">Edit Player Name</string>
+    <string name="delete_player_btn">Delete Player</string>
+    <string name="new_player_name">New Player Name</string>
+    <string name="save_btn">Save</string>
+    <string name="not_enough_players">Need at least 2 Players</string>
+    <string name="version_menu_hint">Version</string>
+    <string name="version_menu_nothing_selected">You need to select a Version</string>
+
+    <!--Game Fragment-->
+    <string name="game_fragment_label">Game</string>
+    <string name="go_btn">Go</string>
+    <string name="pay_prison_btn">Pay Prison\n<font color='#A01818'>€50</font></string>
+    <string name="pay_prison">Pay Prison</string>
+    <string name="luxury_tax_btn">Luxury Tax\n<font color='#A01818'>€100</font></string>
+    <string name="luxury_tax">Luxury Tax</string>
+    <string name="income_tax_btn">Income Tax\n<font color='#A01818'>€200</font></string>
+    <string name="income_tax">Income Tax</string>
+    <string name="pay_btn">Pay</string>
+    <string name="trade_btn">Trade</string>
+    <string name="collect_btn">Collect</string>
+
+    <!--Exit Dialog-->
+    <string name="exit_dialog_title">Confirmation</string>
+    <string name="exit_dialog_message">Are you sure you want to exit?</string>
+    <string name="exit_dialog_positive">Yes</string>
+    <string name="exit_dialog_negative">No</string>
+
+    <!--Bank or Free Parking Dialog-->
+    <string name="bank_icon">Bank</string>
+    <string name="free_parking_icon">Free Parking</string>
+    <string name="pay">Pay</string>
+    <string name="collect">Collect</string>
+
+    <!--Custom Amount Dialog-->
+    <string name="amount">Amount</string>
+
+    <!--Property Dialogs-->
+    <string name="rent">Rent</string>
+    <string name="house_1">1 House</string>
+    <string name="house_2">2 Houses</string>
+    <string name="house_3">3 Houses</string>
+    <string name="house_4">4 Houses</string>
+    <string name="hotel">Hotel</string>
+    <string name="skyscraper">Skyscraper</string>
+    <string name="buy_house">Buy House</string>
+    <string name="sell_house">Sell House</string>
+
+    <string name="train_icon">Train Icon</string>
+    <string name="station_1">1 Station</string>
+    <string name="station_2">2 Stations</string>
+    <string name="station_3">3 Stations</string>
+    <string name="station_4">4 Stations</string>
+    <string name="buy_depot">Buy Depot</string>
+    <string name="sell_depot">Sell Depot</string>
+
+    <string name="utility_icon">Utility Icon</string>
+    <string name="utility_1">1 Utility</string>
+    <string name="utility_1_amount">Dice x 4</string>
+    <string name="utility_2">2 Utilities</string>
+    <string name="utility_2_amount">Dice x 10</string>
+    <string name="utility_3">3 Utilities</string>
+    <string name="utility_3_amount">Dice x 20</string>
+    <string name="utility_dice">Dice</string>
+
+    <string name="auction">Auction</string>
+    <string name="mortgage">Mortgage</string>
+    <string name="unmortgage">Unmortgage</string>
+
+    <!--Player Fragment-->
+    <string name="player_fragment_label">Player</string>
+    <string name="give_up_btn">Give Up</string>
+
+    <!--Trade Fragment-->
+    <string name="trade_edit_text_hint">Amount</string>
+    <string name="up_down_button">Up Down</string>
+
+    <!--Winning Dialog-->
+    <string name="trophy">Trophy</string>
+    <string name="winning_msg">is the Winner</string>
+
 </resources>
