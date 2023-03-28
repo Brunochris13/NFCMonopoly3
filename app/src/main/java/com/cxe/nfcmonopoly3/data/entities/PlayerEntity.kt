@@ -17,7 +17,7 @@ data class PlayerEntity(
     @ColumnInfo(name = "name")
     val name: String,
     @ColumnInfo(name = "money")
-    val money: Int,
+    val money: Int = 0,
     @ColumnInfo(name = "sortOrder")
     val sortOrder: Int,
     @ColumnInfo(name = "createdOn")

@@ -15,6 +15,8 @@ data class PropertyEntity(
     val price: Int,
     val rent: IntArray,
     val mortgaged: Boolean,
+    val mortgageValue: Int,
+    val unmortgageValue: Int,
     val playerId: CardColor?,
     val currentRentLevel: Int,
     // Mega Edition
@@ -23,12 +25,15 @@ data class PropertyEntity(
     val propertyType: PropertyType? = null,
     // Color Property
     val color: PropertyColor? = null,
-    val housePrice: Int? = null,
+    val houseBuyPrice: Int? = null,
+    val houseSellPrice: Int? = null,
     val colorSetPropertyAmount: Int? = null,
     val set: Boolean? = null,
     val megaSet: Boolean? = null,
     // Station Property
     val depot: Boolean? = null,
+    val depotBuyPrice: Int? = null,
+    val depotSellPrice: Int? = null,
     // Utility Property
     val utilityType: UtilityType? = null,
     // Other

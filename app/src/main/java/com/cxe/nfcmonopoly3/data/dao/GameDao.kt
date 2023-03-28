@@ -4,6 +4,7 @@ import androidx.room.*
 import com.cxe.nfcmonopoly3.data.entities.GameEntity
 import com.cxe.nfcmonopoly3.data.entities.PlayerEntity
 import com.cxe.nfcmonopoly3.data.entities.PropertyEntity
+import com.cxe.nfcmonopoly3.data.entities.partial_entities.player.PlayerMoneyPartialEntity
 import kotlinx.coroutines.flow.Flow
 
 @Dao
@@ -11,6 +12,9 @@ interface GameDao {
 
     @Query("SELECT gameId FROM games WHERE isActive = 1")
     suspend fun getActiveGameId(): Int?
+
+    @Update(entity = PlayerEntity::class)
+    suspend fun setPlayerMoney(playerMoneyPartialEntity: PlayerMoneyPartialEntity)
 
     // General
     /* ----------------------------------------- */
