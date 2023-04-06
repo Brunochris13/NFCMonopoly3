@@ -8,12 +8,12 @@ import androidx.room.TypeConverters
 import com.cxe.nfcmonopoly3.data.converters.DateConverter
 import com.cxe.nfcmonopoly3.data.converters.IntArrayConverter
 import com.cxe.nfcmonopoly3.data.dao.GameDao
-import com.cxe.nfcmonopoly3.data.entities.GameEntity
-import com.cxe.nfcmonopoly3.data.entities.PlayerEntity
-import com.cxe.nfcmonopoly3.data.entities.PropertyEntity
+import com.cxe.nfcmonopoly3.data.entities.Game
+import com.cxe.nfcmonopoly3.data.entities.Player
+import com.cxe.nfcmonopoly3.data.entities.Property
 
 @Database(
-    entities = [GameEntity::class, PlayerEntity::class, PropertyEntity::class],
+    entities = [Game::class, Player::class, Property::class],
     version = 1,
     exportSchema = false
 )

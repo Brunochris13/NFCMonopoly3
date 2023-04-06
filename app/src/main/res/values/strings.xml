@@ -3,11 +3,12 @@
     <string name="default_string">Default</string>
 
     <!--Navigation-->
-    <string name="home_fragment_title">Players Setup</string>
+    <string name="home_fragment_title">Home</string>
+    <string name="player_setup_fragment_title">Player Setup</string>
     <string name="game_fragment_title">Game</string>
     <string name="trade_fragment_title">Trade</string>
 
-    <!--Home Fragment-->
+    <!--Player Setup Fragment-->
     <string name="start_btn">Start</string>
     <string name="mega_switch">Mega</string>
     <string name="edit_player_btn">Edit Player Name</string>

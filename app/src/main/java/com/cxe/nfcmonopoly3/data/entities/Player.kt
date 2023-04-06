@@ -7,9 +7,10 @@ import com.cxe.nfcmonopoly3.logic.enums.CardColor
 import java.util.*
 
 @Entity(tableName = "players")
-data class PlayerEntity(
-    @PrimaryKey(autoGenerate = true)
-    val playerId: Long = 0,
+data class Player(
+    @PrimaryKey
+    @ColumnInfo(name = "playerId")
+    val playerId: Long? = null,
     @ColumnInfo(name = "gameId")
     val gameId: Long,
     @ColumnInfo(name = "cardColor")
@@ -17,9 +18,7 @@ data class PlayerEntity(
     @ColumnInfo(name = "name")
     val name: String,
     @ColumnInfo(name = "money")
-    val money: Int = 0,
-    @ColumnInfo(name = "sortOrder")
-    val sortOrder: Int,
+    var money: Int = 0,
     @ColumnInfo(name = "createdOn")
     val createdOn: Date = Calendar.getInstance().time,
     @ColumnInfo(name = "updatedOn")

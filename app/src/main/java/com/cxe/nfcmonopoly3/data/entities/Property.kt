@@ -1,28 +1,30 @@
 package com.cxe.nfcmonopoly3.data.entities
 
+import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 import com.cxe.nfcmonopoly3.logic.enums.*
 import java.util.*
 
 @Entity(tableName = "properties")
-data class PropertyEntity(
-    @PrimaryKey(autoGenerate = true)
-    val propertyId: Long,
+data class Property(
+    @PrimaryKey
+    @ColumnInfo(name = "propertyId")
+    val propertyId: Long? = null,
     val gameId: Long,
     val propertyCard: PropertyCard,
     val name: String,
     val price: Int,
     val rent: IntArray,
-    val mortgaged: Boolean,
+    val mortgaged: Boolean = false,
     val mortgageValue: Int,
-    val unmortgageValue: Int,
-    val playerId: CardColor?,
-    val currentRentLevel: Int,
+    val unMortgageValue: Int,
+    val playerCardColor: CardColor? = null,
+    val currentRentLevel: Int = 0,
     // Mega Edition
-    val mega: Boolean,
+    val mega: Boolean = false,
     // Property Type (ColorProperty, StationProperty, UtilityProperty)
-    val propertyType: PropertyType? = null,
+    val propertyType: PropertyType,
     // Color Property
     val color: PropertyColor? = null,
     val houseBuyPrice: Int? = null,
@@ -45,7 +47,7 @@ data class PropertyEntity(
         if (this === other) return true
         if (javaClass != other?.javaClass) return false
 
-        other as PropertyEntity
+        other as Property
 
         if (!rent.contentEquals(other.rent)) return false
 

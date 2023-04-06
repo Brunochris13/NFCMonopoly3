@@ -6,7 +6,7 @@
 
         <variable
             name="utilityProperty"
-            type="com.cxe.nfcmonopoly3.data.entities.PropertyEntity" />
+            type="com.cxe.nfcmonopoly3.data.entities.Property" />
 
         <import type="com.cxe.nfcmonopoly3.util.UtilityTypeToDrawable" />
 

@@ -10,19 +10,21 @@ import android.os.Build
 import android.os.Bundle
 import android.provider.Settings
 import android.util.Log
+import android.widget.Toast
+import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatDelegate
+import androidx.fragment.app.Fragment
+import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
-import android.widget.Toast
-import androidx.annotation.RequiresApi
-import androidx.appcompat.app.AppCompatDelegate
-import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModelProvider
 import com.cxe.nfcmonopoly20.logic.nfcparser.NdefMessageParser
-import com.cxe.nfcmonopoly3.databinding.ActivityMainBinding
 import com.cxe.nfcmonopoly3.logic.viewmodel.AppViewModel
+import com.cxe.nfcmonopoly3.ui.player_setup.PlayerSetupFragment
+import com.example.nfcmonopoly3.R
+import com.example.nfcmonopoly3.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
@@ -79,7 +81,7 @@ class MainActivity : AppCompatActivity() {
             // Get current Fragment
             when (val currentFragment =
                 navHostFragment?.childFragmentManager?.primaryNavigationFragment) {
-//                is HomeFragment -> currentFragment.onNewIntent(msg)
+                is PlayerSetupFragment -> currentFragment.onNewIntent(msg)
 //                is GameFragment -> currentFragment.onNewIntent(msg)
 //                is TradeFragment -> currentFragment.onNewIntent(msg)
             }

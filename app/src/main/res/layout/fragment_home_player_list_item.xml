@@ -5,7 +5,7 @@
     <data>
         <variable
             name="player"
-            type="com.cxe.nfcmonopoly3.data.entities.PlayerEntity" />
+            type="com.cxe.nfcmonopoly3.data.entities.Player" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

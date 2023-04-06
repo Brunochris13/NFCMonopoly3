@@ -6,7 +6,7 @@
 
         <variable
             name="stationProperty"
-            type="com.cxe.nfcmonopoly3.data.entities.PropertyEntity" />
+            type="com.cxe.nfcmonopoly3.data.entities.Property" />
 
         <import type="android.graphics.Typeface" />
     </data>

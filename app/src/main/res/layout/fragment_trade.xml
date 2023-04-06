@@ -9,11 +9,11 @@
 
         <variable
             name="player1"
-            type="com.cxe.nfcmonopoly3.data.entities.PlayerEntity" />
+            type="com.cxe.nfcmonopoly3.data.entities.Player" />
 
         <variable
             name="player2"
-            type="com.cxe.nfcmonopoly3.data.entities.PlayerEntity" />
+            type="com.cxe.nfcmonopoly3.data.entities.Player" />
 
         <variable
             name="player1Pays"
